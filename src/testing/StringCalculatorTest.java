@@ -77,6 +77,7 @@ public class StringCalculatorTest {
     @Test
     public void supportOddEvenAddition() {
     	assertEquals(4, stringCalculator.add("0//2,4,6"));
+    	assertEquals(8, stringCalculator.add("1//2,4,6"));
     }
 
 }

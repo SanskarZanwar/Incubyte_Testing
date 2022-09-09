@@ -3,24 +3,76 @@ package testing;
 
 public class StringCalculator {
 
-    public int add(String numbers) {
-        if (numbers.length() < 2) {
-            if (numbers.isEmpty()) {
-                return 0;
-            } else {
-                return convertToInt(numbers);
-            }
-            } else { 
-            String delimiter = ",";
-            if (numbers.matches("//(.*)\n(.*)")) {
-                delimiter = Character.toString(numbers.charAt(2));
-                numbers = numbers.substring(4);
-            }
-           
-            String[] numList = splitNumbers(numbers, delimiter + "|\n");
-            return sum(numList);
-        }
-    }
+	public int add(String numbers) {
+		if (numbers.length() < 2) {
+			if (numbers.isEmpty()) {
+				return 0;
+			} else {
+				return convertToInt(numbers);
+			}
+		} else { 
+			String delimiter = ",";
+			if (numbers.matches("//(.*)\n(.*)")) {
+				delimiter = Character.toString(numbers.charAt(2));
+				numbers = numbers.substring(4);
+			}
+			Boolean odd=false,even=false;
+			if (numbers.startsWith("0//")  ) {
+				odd=true;
+				numbers = numbers.substring(3);
+			}
+			if (numbers.startsWith("1//")  ) {
+				even=true;
+				numbers = numbers.substring(3);
+			}
+
+			String[] numList = splitNumbers(numbers, delimiter + "|\n");
+			int size,sum=0;
+			if(odd || even) {
+				int i;
+				size = numList.length;
+				int arr[]=new int[size];
+
+
+				for(i=0; i<size; i++) {
+					arr[i] = Integer.parseInt(numList[i]); 
+				}
+
+
+
+
+				if(odd) {
+
+					for( i=1;i<numList.length;i+=2){
+						sum+=arr[i]; 
+					}
+
+				}
+				if (even) {
+
+					for( i=0;i<numList.length;i+=2){
+						sum+=arr[i]; }
+
+
+
+				}
+
+
+
+
+
+
+			}
+			if(odd || even) {
+				return sum;	
+			}
+			else {
+				return sum(numList);
+
+			}
+
+		}
+	}
    
     private String[] splitNumbers(String numbers, String divider) {
         return numbers.split(divider);
@@ -46,7 +98,7 @@ public class StringCalculator {
     }
 
     private int sum(String[] numbers) {
-        int total = 0,j=2,l,i=0,etotal=0,ototal=0;
+        int total = 0,j=2,l,i=0;
         l = numbers.length;
         StringBuilder negativeString = new StringBuilder();
 		int arr[] = new int[l]; 
@@ -74,67 +126,26 @@ public class StringCalculator {
 		    arr[i]=convertToInt(number);
 	            if (convertToInt(number) < 1000 ) 
 	                total += convertToInt(number);
-
+	            else if(j==0){
+	            	total=0;
+			for(int k=0; k<numbers.length; k++){
+				if(k%2 == 0){
+					 total+= arr[k];
+				}
+			}
+		    }
+	            else {
+	            	total=0;
+			for(int k=0; k<numbers.length; k++){
+				
+				if(k%2 != 0)
+					 total+= arr[k];
+			
+			}
+	            }
 	        }
-//	        if(j!=2) {
-//	        	total = sumEveOdd(numbers);
-//	        }
-	            for(int k=0; k<l; k++) {
-	            	if(k%2 == 0) {
-	            		etotal+=arr[k];
-	            	}
-	            	else {
-	            		ototal+=arr[k];
-	            	}
-	            }
-	            if(j==1) {
-	            	return etotal;
-	            }
-	            if(j==0) {
-	            	return ototal;
-	            }
 	        return total;
     }
 }
-
-//	
-//private int sumEveOdd(String[] numbers) {
-//	StringBuilder s = new StringBuilder();
-//	for(String number: numbers) {
-//		s.append(number);
-//	}
-//  String parity;
-//  if(s.charAt(0)=='0')
-//  {
-//      parity="odd";
-//  }
-//  else parity="even";
-//  //string sub=s.substring(3,s.length());
-////  string[] num=sub.split(",");
-//  
-//  int sum_even=0;
-//  int sum_odd=0;
-//  int flag=0;
-//  int n=s.length();
-//  for(int i=3;i<n;i++)
-//  {
-//      if(s.charAt(i)!=',')
-//      {
-//          if(flag==0)
-//          {
-//              sum_even+=s.charAt(i)-'0';
-//              flag=1;
-//          }
-//          else 
-//          {
-//              sum_odd+=s.charAt(i)-'0';
-//              flag=0;
-//          }
-//          
-//      }
-//  }
-//  if(parity.equals("odd"))return sum_odd;
-//  else return sum_even;
-//	
-//}
-//}
+		
+        
