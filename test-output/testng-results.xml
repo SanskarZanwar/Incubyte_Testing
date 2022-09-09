@@ -2,56 +2,56 @@
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-09T20:06:15 IST" name="Default suite" finished-at="2022-09-09T20:06:15 IST" duration-ms="79">
+  <suite started-at="2022-09-09T20:09:03 IST" name="Default suite" finished-at="2022-09-09T20:09:03 IST" duration-ms="57">
     <groups>
     </groups>
-    <test started-at="2022-09-09T20:06:15 IST" name="Default test" finished-at="2022-09-09T20:06:15 IST" duration-ms="79">
+    <test started-at="2022-09-09T20:09:03 IST" name="Default test" finished-at="2022-09-09T20:09:03 IST" duration-ms="57">
       <class name="testing.StringCalculatorTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:06:15 IST" name="init" finished-at="2022-09-09T20:06:15 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:09:03 IST" name="init" finished-at="2022-09-09T20:09:03 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="supportOddEvenAddition()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:06:15 IST" name="supportOddEvenAddition" finished-at="2022-09-09T20:06:15 IST" duration-ms="11" status="PASS">
+        <test-method signature="supportOddEvenAddition()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:09:03 IST" name="supportOddEvenAddition" finished-at="2022-09-09T20:09:03 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- supportOddEvenAddition -->
-        <test-method signature="testAddAlphabets()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:06:15 IST" name="testAddAlphabets" finished-at="2022-09-09T20:06:15 IST" duration-ms="2" status="PASS">
+        <test-method signature="testAddAlphabets()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:09:03 IST" name="testAddAlphabets" finished-at="2022-09-09T20:09:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddAlphabets -->
-        <test-method signature="testAddMultipleNumbers()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:06:15 IST" name="testAddMultipleNumbers" finished-at="2022-09-09T20:06:15 IST" duration-ms="2" status="PASS">
+        <test-method signature="testAddMultipleNumbers()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:09:03 IST" name="testAddMultipleNumbers" finished-at="2022-09-09T20:09:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddMultipleNumbers -->
-        <test-method signature="testAddOneNumber()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:06:15 IST" name="testAddOneNumber" finished-at="2022-09-09T20:06:15 IST" duration-ms="1" status="PASS">
+        <test-method signature="testAddOneNumber()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:09:03 IST" name="testAddOneNumber" finished-at="2022-09-09T20:09:03 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddOneNumber -->
-        <test-method signature="testAddStringNumbers()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:06:15 IST" name="testAddStringNumbers" finished-at="2022-09-09T20:06:15 IST" duration-ms="0" status="PASS">
+        <test-method signature="testAddStringNumbers()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:09:03 IST" name="testAddStringNumbers" finished-at="2022-09-09T20:09:03 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddStringNumbers -->
-        <test-method signature="testEmptyString()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:06:15 IST" name="testEmptyString" finished-at="2022-09-09T20:06:15 IST" duration-ms="1" status="PASS">
+        <test-method signature="testEmptyString()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:09:03 IST" name="testEmptyString" finished-at="2022-09-09T20:09:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmptyString -->
-        <test-method signature="testNegativeNumber()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:06:15 IST" name="testNegativeNumber" finished-at="2022-09-09T20:06:15 IST" duration-ms="2" status="PASS">
+        <test-method signature="testNegativeNumber()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:09:03 IST" name="testNegativeNumber" finished-at="2022-09-09T20:09:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNegativeNumber -->
-        <test-method signature="testNewLine()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:06:15 IST" name="testNewLine" finished-at="2022-09-09T20:06:15 IST" duration-ms="1" status="PASS">
+        <test-method signature="testNewLine()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:09:03 IST" name="testNewLine" finished-at="2022-09-09T20:09:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNewLine -->
-        <test-method signature="testOtherDelimiter()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:06:15 IST" name="testOtherDelimiter" finished-at="2022-09-09T20:06:15 IST" duration-ms="0" status="PASS">
+        <test-method signature="testOtherDelimiter()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:09:03 IST" name="testOtherDelimiter" finished-at="2022-09-09T20:09:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOtherDelimiter -->
-        <test-method signature="testOverThousand()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:06:15 IST" name="testOverThousand" finished-at="2022-09-09T20:06:15 IST" duration-ms="1" status="PASS">
+        <test-method signature="testOverThousand()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:09:03 IST" name="testOverThousand" finished-at="2022-09-09T20:09:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOverThousand -->
-        <test-method is-config="true" signature="destroy()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:06:15 IST" name="destroy" finished-at="2022-09-09T20:06:15 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="destroy()[pri:0, instance:testing.StringCalculatorTest@2df9b86]" started-at="2022-09-09T20:09:03 IST" name="destroy" finished-at="2022-09-09T20:09:03 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->

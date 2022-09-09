@@ -37,10 +37,6 @@ public class StringCalculator {
 				for(i=0; i<size; i++) {
 					arr[i] = Integer.parseInt(numList[i]); 
 				}
-
-
-
-
 				if(odd) {
 
 					for( i=1;i<numList.length;i+=2){
@@ -53,15 +49,7 @@ public class StringCalculator {
 					for( i=0;i<numList.length;i+=2){
 						sum+=arr[i]; }
 
-
-
 				}
-
-
-
-
-
-
 			}
 			if(odd || even) {
 				return sum;	
