@@ -6,8 +6,14 @@
       <class name="testing.StringCalculatorTest">
         <methods>
           <include name="destroy"/>
+          <include name="testAddMultipleNumbers"/>
+          <include name="testNewLine"/>
           <include name="supportOddEvenAddition"/>
+          <include name="testAddAlphabets"/>
           <include name="init"/>
+          <include name="testOverThousand"/>
+          <include name="testAddStringNumbers"/>
+          <include name="testOtherDelimiter"/>
         </methods>
       </class> <!-- testing.StringCalculatorTest -->
     </classes>
